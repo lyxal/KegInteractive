@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<script src="MineFriff.js"></script>
 		<style>
 			body {background: gray;}
 			#main {background: white;}
@@ -15,12 +14,12 @@
 	</head>
 
 	<body>
-		<script type="module"> import * as keg from './__target__/keg.js'; window.keg = keg;</script>
+		<script type="module"> import * as index from './__target__/index.js'; window.index = index;</script>
 
 		<div id="main">
 			<textarea id="codebox" placeholder="Place Keg code here" style="font-size: 16px; line-height: 24px; background: transparent; font-family: monospace; width: 100%; height: 40em;" spellcheck="false"></textarea>
 				<br>
-<button onclick="keg.run()" text="Run" id="submit" style="margin-left: 10px;"> Run </button>
+<button onclick="index.run()" text="Run" id="submit" style="margin-left: 10px;"> Run </button>
 <br>
 <hr>
 <p id="output" style="font-family: monospace; background: #B9B8B5; font-size: 20px;"></p>
